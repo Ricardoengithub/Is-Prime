@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+  background-color: black;
+}
+.App {
+  text-align: center;
+}
+
+#container{
+  position: fixed;
+  width: 50%;
+  margin: 15% 25% ;
+}
+
+input[type=number]{
+  width: 50%;
+  line-height: 30px;
+  border-radius: 5px;
+  font-family: 'Pacifico', monospace;
+  font-size: 2em;
+  text-align: center;
+}
+input[type=number]:focus{
+  width: 100%;
+}
+h1{
+  font-family: 'Pacifico', monospace;
+  color: white;
+}
