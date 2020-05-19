@@ -8,7 +8,7 @@ body{
 
 #primes, #factorial, #fibonacci{
   width: 50%;
-  margin: 8% 25% ;
+  margin: 7% 25% ;
 }
 input[type=number]{
   width: 50%;
