@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato:wght@900&display=swap');
 body{
   background-color: black;
 }
@@ -6,17 +6,15 @@ body{
   text-align: center;
 }
 
-#container{
-  position: fixed;
+#primes, #factorial, #fibonacci{
   width: 50%;
-  margin: 15% 25% ;
+  margin: 8% 25% ;
 }
-
 input[type=number]{
   width: 50%;
-  line-height: 30px;
+  padding: 10px;
   border-radius: 5px;
-  font-family: 'Pacifico', monospace;
+  font-family: 'Lato', monospace;
   font-size: 2em;
   text-align: center;
 }
@@ -24,6 +22,24 @@ input[type=number]:focus{
   width: 100%;
 }
 h1{
-  font-family: 'Pacifico', monospace;
+  font-family: 'Comfortaa', monospace;
   color: white;
+}
+#success{
+  color: rgb(0, 204, 0);
+  transform: scale(1.2);
+}
+#fail{
+  color: red;
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 860px) {
+  #primes, #factorial, #fibonacci{
+    width: 50%;
+    margin: 5% 25% ;
+  }
+  input[type=number]{
+    width: 60%;
+  }
 }
