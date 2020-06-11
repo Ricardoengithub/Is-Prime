@@ -7,15 +7,12 @@ function isPrime(n) {
   if(n < 2){
     return <div>No es primo <FaTimesCircle id="fail"/></div>
   }
-  if (n % 2 === 0 && n > 2) {
-    return <div>Es primo <FaTimesCircle id="fail"/></div>
-  }else{
-    for (let i = 2; i < n; i++) {
-      if( n % i === 0){
-        return <div>No es primo <FaTimesCircle id="fail"/></div>
-      }
+  for (let i = 2; i < n; i++) {
+    if( n % i === 0){
+      return <div>No es primo <FaTimesCircle id="fail"/></div>
     }
   }
+  
   return <div>Es primo <FaCheckCircle id="success"/></div>
 }
 
